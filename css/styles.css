@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.header {
+    background: hsl(0, 100%, 61%);
+}
+
+.header .pokedex .logo-pokedex {
+    width: 200px;
+}
+
+.pokemon-container {
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(0, 0%, 94%);
+}
+
+.pokemon-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.pokemon {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemon-img img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.pokemon-img:hover img {
+    transform: scale(1.2);
+}
+
+.pokemon-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pokemon-id {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.pokemon-nombre {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.pokemon-tipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.pokemon-tipos .tipo {
+    background: hsl(0, 0%, 93%);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.pokemon-stasts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+.btn-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 80px;
+}
+
+.btn {
+    border: none;
+    background: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-anterior:hover {
+    transform: translateX(-0.5rem);
+}
+
+.btn-siguiente:hover {
+    transform: translateX(0.5rem);
+}
